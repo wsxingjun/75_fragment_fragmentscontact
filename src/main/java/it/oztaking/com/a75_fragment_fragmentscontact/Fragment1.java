@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 /**
  * Created by Administrator on 2017-11-23.
@@ -21,6 +22,8 @@ public class Fragment1 extends Fragment {
         bt_change.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+               // Toast.makeText(getActivity(),"弹吐司",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),"弹吐司",Toast.LENGTH_SHORT).show();
                 Fragment2 fragment = (Fragment2)getActivity().getFragmentManager().findFragmentByTag("f2");
                 fragment.setText("haha");
 
